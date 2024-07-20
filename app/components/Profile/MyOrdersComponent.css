@@ -1,0 +1,52 @@
+.menu-container {
+    text-align: right; /* این خط را اضافه کرده‌ایم */
+    direction: rtl; /* این خط را اضافه کرده‌ایم */
+    user-select: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.horizontal-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e7e1e1;
+    border-radius: 15px;
+}
+
+.menu-item {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #9b9a9a;
+
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.component-container {
+    clear: both;
+}
+
+.component {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

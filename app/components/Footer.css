@@ -1,0 +1,21 @@
+.list-unstyled.collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+
+.list-unstyled.collapse.show {
+    max-height: 1000px; /* این مقدار باید بر اساس ارتفاع واقعی منو تنظیم شود */
+}
+
+@media (max-width: 768px) {
+    .list-unstyled.collapse {
+        max-height: none;
+    }
+}
+
+/* Add some styles for active menu */
+.active > .h5 {
+    color: #007bff; /* Bootstrap primary color */
+}

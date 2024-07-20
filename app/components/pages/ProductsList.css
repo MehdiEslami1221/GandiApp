@@ -1,0 +1,27 @@
+/* styles.css */
+.selected-item {
+    background-color: #11296c; /* رنگ پس‌زمینه سبز */
+    color: white; /* رنگ متن سفید */
+}
+
+.unselected-item {
+    background-color: #f8f9fa; /* رنگ پس‌زمینه خاکستری روشن */
+    color: black; /* رنگ متن سیاه */
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.accordion-button::after {
+    color: #ffffff !important;
+}
+
+
+.accordion-button:focus, .accordion-button:active {
+    /* حذف حالت فوکوس و اکتیو */
+    box-shadow: none !important;
+    outline: 0 !important;
+}

@@ -1,0 +1,144 @@
+.sidebar {
+    width: 250px;
+    height: 100%;
+    /*background-color: rgba(197, 194, 194, 0.44);*/
+    transition: right 0.3s ease;
+}
+
+.sidebar-menu {
+    padding: 50px 5px;
+
+}
+
+.menu-item {
+    display: block;
+    color: #070707 !important;
+    padding: 10px;
+    margin: 10px 10px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    border-radius: 5px;
+}
+
+.menu-item .text {
+    display: inline; /* یا 'none' برای پنهان کردن متن در سایز کوچک */
+}
+
+.menu-item i {
+    display: inline; /* یا 'inline-block' برای نمایش آیکن */
+    margin-left: 10px;
+    color: #070707; /* رنگ دلخواه برای آیکن اکتیو */
+}
+
+.menu-item:hover {
+    background-color: rgba(197, 194, 194, 0.14);
+}
+
+.menu-item .active-icon {
+    color: #294362; /* رنگ دلخواه برای آیکن اکتیو */
+}
+
+.menu-item.active .active-icon {
+    color: #294362; /* رنگ دلخواه برای آیکن اکتیو */
+}
+
+.menu-item.active {
+    background-color: rgba(197, 194, 194, 0.44);
+    border: solid rgba(197, 194, 194, 0.13);
+    transition: background-color 0.5s ease;
+    border-radius: 5px;
+}
+
+/* برای صفحه‌نمایش‌های کوچکتر */
+@media (max-width: 768px) {
+    .sidebar {
+        width: auto;
+        /*background-color: rgba(51, 51, 52, 0.76);*/
+        transition: right 0.3s ease;
+        margin: 15px;
+        border-radius: 5px;
+    }
+
+    .menu-item .text {
+        display: none;
+    }
+
+    .menu-item i {
+        display: inline-block;
+        margin: 0;
+
+    }
+
+    .menu-item {
+        display: block;
+        color: #070707 !important;
+        padding: 10px;
+        margin: 10px 0;
+        text-decoration: none;
+        transition: background-color 0.5s ease;
+        border-radius: 5px;
+    }
+}
+
+
+hr.dotted {
+    border-top: 3px dotted #6c6e6d; /* تعیین ضخامت و نوع خط */
+    border-bottom: none; /* حذف خط پایین */
+    margin: 20px 0; /* فاصله بالا و پایین خط */
+    height: 0; /* تعیین ارتفاع خط */
+}
+
+
+.text-with-line {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.text-with-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3498db; /* رنگ خط */
+    border-radius: 1px; /* دور گرد کردن گوشه‌های خط */
+}
+
+
+.dotted-border-radius {
+    padding: 10px;
+    border: 2px dotted #3498db; /* رنگ و سبک حاشیه */
+    border-radius: 15px; /* شعاع گردی گوشه‌ها */
+    display: inline-block;
+    background-color: #fff; /* رنگ پیش‌فرض داخل */
+    transition: background-color 0.5s ease; /* انیمیشن تغییر رنگ */
+}
+
+.dotted-border-radius:hover {
+    background-color: #eed986; /* رنگ داخل هنگام قرار گرفتن موس */
+}
+
+
+.delete-item {
+    color: #e32b2b;
+    cursor: pointer;
+    transition: color 0.5s ease; /* انیمیشن تغییر رنگ */
+}
+
+.delete-item:hover {
+    color: rgba(227, 43, 43, 0.69);
+    transition: color 0.5s ease; /* انیمیشن تغییر رنگ */
+
+}
+
+
+.app-container {
+    display: flex;
+}
+
+.content {
+    flex-grow: 1;
+    border: solid #9ec5fe;
+}

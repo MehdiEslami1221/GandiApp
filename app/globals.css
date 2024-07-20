@@ -1,0 +1,520 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 0.8rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+
+.app {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  /* box-shadow: 0 0 5px #ccc; */
+}
+
+.details {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+
+
+.box .big-img {
+  max-width: 500px;
+  min-width: 290px;
+  overflow: hidden;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+  /* margin: 25px; */
+}
+
+
+.big-img img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  object-fit: cover;
+}
+
+.details .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  min-width: 290px;
+  /* margin: 25px; */
+}
+
+
+.middle {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart {
+  width: 350px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 10px;
+}
+
+.cart hr {
+  margin: 30px 30px 30px 30px;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.row1 h6 {
+  padding: 5px;
+  margin: 5px 30px 0 0;
+}
+
+
+.description h5 {
+  margin: 10px 0;
+
+}
+
+
+.description h6 {
+  margin: 10px 0;
+}
+
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.zemanat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.define-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horiz {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 30px 30px 0 0;
+  align-items: center;
+}
+
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vertical h6 {
+  margin: 0px;
+}
+
+
+.vertical button {
+  width: 300px;
+  border-radius: 10px;
+  background-color: green;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  color: white;
+  border: none;
+}
+
+.mainAttribute {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.attribute {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.line-attribute {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border-radius: 10px;
+  background-color: #EBF9FF;
+  padding: 20px;
+  margin: 20px;
+}
+
+
+.colors button {
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  outline: none;
+  margin-right: 5px;
+  cursor: pointer;
+  /* transition: 0.2s linear; */
+}
+
+.colors button.active {
+  opacity: 5;
+  border: 2px solid lightseagreen;
+}
+
+
+.ram button {
+  background-color: white;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+  border-width: 0;
+  margin: 5px;
+  cursor: pointer;
+  /* transition: 0.2s linear; */
+}
+
+
+.ram button.active {
+  opacity: 5;
+  border: 2px solid lightseagreen;
+}
+
+
+.thumb {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.thumb img {
+  width: 90px;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+  opacity: 0.7;
+  border-radius: 5px;
+  transition: 0.5s linear;
+}
+
+.thumb img.active {
+  opacity: 1;
+  border: 1px solid lightseagreen;
+}
+
+
+@media (max-width: 1024px) {
+  .thumb {
+    height: 50px;
+  }
+
+  .details {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .thumb img {
+    width: 50px;
+  }
+
+  .zemanat {
+    overflow-x: scroll;
+    margin: 10px;
+  }
+
+  .define-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .define-block h6 {
+    width: 150px;
+    text-align: center;
+  }
+
+  .zemanat::-webkit-scrollbar {
+    display: none;
+  }
+
+  .zemanat {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .cart {
+    width: 100%;
+    margin: 0 30px;
+  }
+
+  .middle {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+}
+
+.border {
+  border: 1px solid #ced4da; /* افزودن بردر به دور کل باکس */
+}
+
+.border-top-0 {
+  border-top: none; /* حذف بردر بالای باکس نتایج */
+}
+
+.bg-gray {
+  background-color: #d3d3d3; /* رنگ خاکستری برای پس‌زمینه */
+}
+
+.input-group .form-control:focus, .input-group .input-group-text:focus {
+  outline: none; /* حذف خطوط برجسته هنگام فوکوس */
+  box-shadow: none; /* حذف سایه هنگام فوکوس */
+  background-color: #d3d3d3; /* رنگ خاکستری برای پس‌زمینه */
+
+}
+
+
+a {
+  color: #504e4e;
+}
+
+a:link {
+  color: #000000;
+}
+
+/* visited link */
+a:visited {
+  color: #3c3d3c;
+}
+
+/* mouse over link */
+a:hover {
+  color: #000000;
+}
+
+/* selected link */
+a:active {
+  color: #636364;
+}
+
+.hide {
+  visibility: hidden !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.IconDiv:hover + .hide {
+  visibility: visible !important;
+  color: red !important;
+}
+
+
+input[type=radio] {
+  accent-color: #4486ea !important;
+}
+
+
+input[type=radio] {
+  accent-color: #4486ea !important;
+}
+
+
+input[type="search"] {
+  accent-color: auto; /* این باعث می‌شود که قابلیت accent-color برای تمام input‌های سرچ غیرفعال شود */
+}
+
+
+.swiper-slide {
+  background-position: 50%;
+  background-size: cover;
+}
+
+.swiper-slide {
+  align-items: center;
+  background: #fff !important;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    margin-top: 0;
+  }
+
+  .navbar .nav-item:hover .nav-link {
+    color: #181818;
+  }
+
+  .navbar .dropdown-menu.fade-down {
+    top: 80%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+  }
+
+  .navbar .dropdown-menu.fade-up {
+    top: 180%;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    transition: .3s;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    transform: rotateX(0deg);
+  }
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu.show {
+  right: -150px !important;
+}
+
+.form-switch .form-check-input {
+  margin-left: 1px;
+}
+
+.accordion-button::after {
+  margin-left: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #eae9e9 !important;
+}
+
+.Toastify__toast-container--top-right {
+  right: 1em;
+  top: 1em;
+}
+
+.Toastify__toast-container {
+  box-sizing: border-box;
+  color: #fff;
+  padding: 4px;
+  position: fixed;
+  -webkit-transform: translateZ(9999);
+  width: 320px;
+  z-index: 9999;
+}
+
+.Toastify__toast-theme--dark {
+  background: #121212;
+  color: #fff;
+}
+
+.Toastify__toast--rtl {
+  direction: rtl;
+}
+
+.Toastify__toast {
+  border-radius: 4px;
+  box-shadow: 0 1px 10px 0 #0000001a, 0 2px 15px 0 #0000000d;
+  box-sizing: border-box;
+  cursor: default;
+  direction: ltr;
+  display: flex;
+  font-family: inherit;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  max-height: 800px;
+  min-height: 64px;
+  overflow: hidden;
+  padding: 8px;
+  position: relative;
+  z-index: 0;
+}
+
+.Toastify__toast-body {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  margin: auto 0;
+  padding: 6px;
+  direction: rtl;
+}
+
+.Toastify__zoom-enter {
+  animation-name: Toastify__zoomIn;
+}
+
+.Toastify--animate-icon {
+  animation-duration: .3s;
+  animation-fill-mode: both;
+}
+
+.Toastify__toast-icon {
+  display: flex;
+  flex-shrink: 0;
+  margin-inline-end: 10px;
+  width: 20px;
+}
+
+.Toastify__toast-icon svg {
+  fill: #ff0000;
+}
+
+.Toastify__close-button > svg {
+  fill: currentColor;
+  height: 16px;
+  width: 14px;
+  position: absolute;
+  left: 10px;
+}
+
+.Toastify__close-button {
+  align-self: flex-start;
+  background: #0000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  opacity: .7;
+  outline: none;
+  padding: 0;
+  transition: .3s ease;
+}
+
+.Toastify {
+  display: none;
+}

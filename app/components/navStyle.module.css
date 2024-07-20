@@ -1,0 +1,13 @@
+
+.hide {
+    visibility: hidden !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.IconDiv:hover + .hide {
+    visibility: visible !important;
+    color: red !important;
+}
